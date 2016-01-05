@@ -1,4 +1,102 @@
 <div class="container">
+
   <h1>Kitchen Sink</h1>
-  <p class='lead'>Shared UI elements for internal tools</p>
+  <p class='lead'>UI elements shared by internal tools</p>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-sm-3">
+      <h4>Elements</h4>
+      <ul>
+        <li>Nav</li>
+        <li>Subnav</li>
+      </ul>
+
+      <h4>Templates</h4>
+      <ul>
+        <li>Page header</li>
+      </ul>
+    </div>
+    <div class="col-sm-9">
+
+      <section class='Section'>
+        <h1 class='Section__title'>Elements</h1>
+
+        {{#ui-element title='Nav' as |u|}}
+          <p>Use this for top-level navigation.</p>
+
+          {{#u.demo}}
+            <ul class="nav nav-flaps">
+              <li class="active" href="false"><a class="active" href="#">Network record</a></li>
+              <li href="false"><a href="#">Disk ingest</a></li>
+              <li href="false"><a href="#">Outbound</a></li>
+              <li href="false"><a href="#">Talk finder</a></li>
+              <li href="false"><a href="#">Screeners</a></li>
+              <li class="pull-right" href="false"><a href="#"><i class="fa fa-gear"></i></a></li>
+            </ul>
+          {{/u.demo}}
+
+          {{#u.use}}
+            <p>Install <a href="https://github.com/tedconf/ember-cli-ted-bootstrap">ember-cli-ted-bootstrap</a>, use the <code>ted-flaps</code> component.</p>
+          {{/u.use}}
+        {{/ui-element}}
+
+        {{#ui-element title='Subnav' as |u|}}
+          <p>Use this for secondary navigation, if it's needed.</p>
+
+          {{#u.demo}}
+            {{!-- BEGIN-SNIPPET subnav --}}
+            <ul class='Subnav clearfix'>
+              <li><a href="#" class="active">Library</a></li>
+              <li><a href="#" class="">Add new</a></li>
+            </ul>
+            {{!-- END-SNIPPET --}}
+          {{/u.demo}}
+
+          {{#u.use}}
+            <div class="row">
+              <div class="col-sm-6">
+                {{code-snippet name='subnav.hbs'}}
+              </div>
+              <div class="col-sm-6">
+                {{code-snippet name='subnav.scss'}}
+              </div>
+            </div>
+          {{/u.use}}
+        {{/ui-element}}
+      </section>
+
+      <section class='Section'>
+        <h1 class='Section__title'>Templates</h1>
+
+        {{#ui-element title='Page' as |u|}}
+          <p>Here's an example of putting everything together.</p>
+
+          {{#u.demo}}
+            <ul class="nav nav-flaps u-margin-bottom">
+              <li class="active" href="false"><a class="active" href="#">Network record</a></li>
+              <li href="false"><a href="#">Disk ingest</a></li>
+              <li href="false"><a href="#">Outbound</a></li>
+              <li href="false"><a href="#">Talk finder</a></li>
+              <li href="false"><a href="#">Screeners</a></li>
+              <li class="pull-right" href="false"><a href="#"><i class="fa fa-gear"></i></a></li>
+            </ul>
+
+            <ul class='Subnav clearfix'>
+              <li><a href="#" class="active">Library</a></li>
+              <li><a href="#" class="">Add new</a></li>
+            </ul>
+
+            <h1>Network record</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum illo aperiam fugiat, laborum sunt necessitatibus assumenda, deserunt praesentium similique ducimus quo ut libero aut esse maiores iure non. Repellendus, distinctio!</p>
+
+            <p>Dolor sit amet, consectetur adipisicing elit. Corrupti, ipsam tenetur quod. Aperiam natus sunt, recusandae dicta id, vel magnam, excepturi ducimus enim quae possimus! Laudantium recusandae voluptates officiis omnis.</p>
+          {{/u.demo}}
+        {{/ui-element}}
+      </section>
+    </div>
+  </div>
+
 </div>

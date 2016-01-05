@@ -31,11 +31,16 @@
     "ember-cli-inject-live-reload": "^1.3.1",
     "ember-cli-qunit": "^1.0.4",
     "ember-cli-release": "0.2.8",
+    "ember-cli-sass": "5.2.1",
     "ember-cli-sri": "^1.2.0",
     "ember-cli-ted-bootstrap": "git+ssh://git@github.com/tedconf/ember-cli-ted-bootstrap.git#bbd03f5a5404fb027a7df72b3b6979f10fe43cd2",
+    "ember-cli-ted-components": "git+ssh://git@github.com/tedconf/ember-cli-ted-components.git#84e056982c39aadfb6917e9a1e0e2986b361b35d",
     "ember-cli-uglify": "^1.2.0",
-    "ember-data": "1.13.15",
+    "ember-code-snippet": "1.1.3",
+    "ember-collapsible-panel": "0.2.2",
+    "ember-data": "2.2.1",
     "ember-disable-proxy-controllers": "^1.0.1",
-    "ember-export-application-global": "^1.0.4"
+    "ember-export-application-global": "^1.0.4",
+    "liquid-fire": "0.22.1"
   }
 }

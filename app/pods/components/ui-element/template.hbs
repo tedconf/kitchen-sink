@@ -1,0 +1,8 @@
+<div class="UI-Element">
+  <h2 class='UI-Element__title'>{{title}}</h2>
+
+  {{yield (hash
+    demo=(component 'ui-element-view')
+    use=(component 'ui-element-use')
+  )}}
+</div>
