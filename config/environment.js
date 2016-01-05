@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'kitchen-sink',
+    podModulePrefix: 'kitchen-sink/pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
